@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="intGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#064E24"/>
+      <stop offset="100%" stop-color="#0B6B34"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FCD34D"/>
+      <stop offset="100%" stop-color="#D97706"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="400" rx="16" fill="url(#intGrad)"/>
+  <!-- Circular ambient glow -->
+  <circle cx="300" cy="200" r="140" fill="#10B981" opacity="0.15"/>
+  <circle cx="300" cy="200" r="90" fill="#F59E0B" opacity="0.1"/>
+  
+  <!-- Laurel leaves background -->
+  <g fill="#FBBF24" opacity="0.4" transform="translate(180, 80) scale(0.8)">
+    <path d="M40,160 Q20,130 50,110 Q70,140 40,160 Z"/>
+    <path d="M30,110 Q5,90 35,70 Q60,95 30,110 Z"/>
+    <path d="M45,60 Q20,30 55,20 Q75,50 45,60 Z"/>
+    <path d="M260,160 Q280,130 250,110 Q230,140 260,160 Z"/>
+    <path d="M270,110 Q295,90 265,70 Q240,95 270,110 Z"/>
+    <path d="M255,60 Q280,30 245,20 Q225,50 255,60 Z"/>
+  </g>
+
+  <!-- Central Shield of Integrity -->
+  <g transform="translate(240, 110)">
+    <!-- Outer Shield -->
+    <path d="M60,10 L110,35 V100 C110,145 60,175 60,175 C60,175 10,145 10,100 V35 Z" fill="#043216" stroke="url(#gold)" stroke-width="5"/>
+    <!-- Inner Shield Accent -->
+    <path d="M60,25 L98,46 V96 C98,132 60,158 60,158 C60,158 22,132 22,96 V46 Z" fill="#0B5D2A"/>
+    <!-- Torch / Star of Truth -->
+    <path d="M60,45 L65,65 L85,67 L68,80 L74,100 L60,88 L46,100 L52,80 L35,67 L55,65 Z" fill="url(#gold)"/>
+    <!-- Checkmark of Integrity below star -->
+    <path d="M48,118 L57,127 L74,110" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  </g>
+
+  <!-- Title Ribbon -->
+  <rect x="120" y="325" width="360" height="42" rx="21" fill="#032510" stroke="#FBBF24" stroke-width="1.5"/>
+  <text x="300" y="351" fill="#FDE68A" font-family="'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="700" letter-spacing="1" text-anchor="middle">HONESTY • CHARACTER • LEADERSHIP</text>
+</svg>

@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="intlGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#04381A"/>
+      <stop offset="100%" stop-color="#095D2A"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FDE047"/>
+      <stop offset="100%" stop-color="#D97706"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="400" rx="16" fill="url(#intlGrad)"/>
+
+  <!-- Global Network Circles & Connections -->
+  <g transform="translate(180, 75)">
+    <!-- Globe Outer Ring -->
+    <circle cx="120" cy="115" r="95" stroke="url(#gold)" stroke-width="3" fill="#042611"/>
+    <!-- Latitude and Longitude Grids -->
+    <ellipse cx="120" cy="115" rx="95" ry="40" stroke="#10B981" stroke-width="2" fill="none" opacity="0.6"/>
+    <ellipse cx="120" cy="115" rx="55" ry="95" stroke="#10B981" stroke-width="2" fill="none" opacity="0.6"/>
+    <line x1="25" y1="115" x2="215" y2="115" stroke="#10B981" stroke-width="2" opacity="0.6"/>
+    <line x1="120" y1="20" x2="120" y2="210" stroke="#10B981" stroke-width="2" opacity="0.6"/>
+
+    <!-- Africa at Center of Globe -->
+    <path d="M120,70 C135,70 148,80 150,95 C150,110 140,125 135,138 C128,155 120,165 115,165 C110,165 105,150 102,140 C98,125 90,115 95,100 C98,90 110,85 115,75 Z" fill="url(#gold)" opacity="0.95"/>
+    <circle cx="152" cy="142" r="3" fill="url(#gold)"/>
+
+    <!-- Global Connection Nodes / Youth Bridges -->
+    <circle cx="35" cy="80" r="7" fill="#6EE7B7"/>
+    <circle cx="205" cy="80" r="7" fill="#6EE7B7"/>
+    <circle cx="50" cy="165" r="7" fill="#6EE7B7"/>
+    <circle cx="190" cy="165" r="7" fill="#6EE7B7"/>
+    <circle cx="120" cy="20" r="8" fill="#FDE047"/>
+    
+    <!-- Connection lines -->
+    <line x1="35" y1="80" x2="115" y2="115" stroke="#FDE047" stroke-width="2" stroke-dasharray="4 4"/>
+    <line x1="205" y1="80" x2="125" y2="115" stroke="#FDE047" stroke-width="2" stroke-dasharray="4 4"/>
+    <line x1="50" y1="165" x2="115" y2="135" stroke="#FDE047" stroke-width="2" stroke-dasharray="4 4"/>
+    <line x1="190" y1="165" x2="125" y2="135" stroke="#FDE047" stroke-width="2" stroke-dasharray="4 4"/>
+  </g>
+
+  <!-- Title Ribbon -->
+  <rect x="90" y="325" width="420" height="42" rx="21" fill="#032510" stroke="#FBBF24" stroke-width="1.5"/>
+  <text x="300" y="351" fill="#FDE68A" font-family="'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="700" letter-spacing="1" text-anchor="middle">INTERNATIONAL PARTNERSHIPS • GLOBAL YOUTH</text>
+</svg>

@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="commGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#054520"/>
+      <stop offset="100%" stop-color="#08612E"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FDE047"/>
+      <stop offset="100%" stop-color="#D97706"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="400" rx="16" fill="url(#commGrad)"/>
+  
+  <circle cx="300" cy="180" r="140" fill="#10B981" opacity="0.12"/>
+  <circle cx="300" cy="180" r="85" fill="#FBBF24" opacity="0.12"/>
+
+  <!-- Community Buildings, Tree of Growth and Helping Hands -->
+  <g transform="translate(160, 80)">
+    <!-- Tree of Sustainable Community Life -->
+    <path d="M140,170 C140,130 120,110 140,80 C145,110 145,130 145,170 Z" fill="url(#gold)"/>
+    <!-- Foliage circles -->
+    <circle cx="140" cy="70" r="38" fill="#10B981"/>
+    <circle cx="115" cy="85" r="26" fill="#059669"/>
+    <circle cx="165" cy="85" r="26" fill="#34D399"/>
+    <circle cx="140" cy="50" r="24" fill="#6EE7B7"/>
+
+    <!-- Community Homes / Facilities -->
+    <!-- Left house -->
+    <polygon points="50,140 20,170 80,170" fill="url(#gold)"/>
+    <rect x="25" y="170" width="50" height="40" fill="#042F15" stroke="url(#gold)" stroke-width="2"/>
+    <rect x="42" y="185" width="16" height="25" fill="#10B981"/>
+
+    <!-- Right house / Community Hall -->
+    <polygon points="230,125 190,165 270,165" fill="url(#gold)"/>
+    <rect x="200" y="165" width="60" height="45" fill="#042F15" stroke="url(#gold)" stroke-width="2"/>
+    <rect x="222" y="180" width="16" height="30" fill="#34D399"/>
+    <!-- Windows -->
+    <rect x="206" y="172" width="10" height="10" rx="2" fill="#FDE68A"/>
+    <rect x="244" y="172" width="10" height="10" rx="2" fill="#FDE68A"/>
+
+    <!-- Supporting Hands beneath the community -->
+    <path d="M40,215 Q140,245 240,215" stroke="url(#gold)" stroke-width="5" stroke-linecap="round" fill="none"/>
+    <!-- Grass line -->
+    <line x1="10" y1="210" x2="270" y2="210" stroke="#34D399" stroke-width="3" stroke-linecap="round"/>
+  </g>
+
+  <!-- Title Ribbon -->
+  <rect x="110" y="325" width="380" height="42" rx="21" fill="#032510" stroke="#FBBF24" stroke-width="1.5"/>
+  <text x="300" y="351" fill="#FDE68A" font-family="'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="700" letter-spacing="1" text-anchor="middle">COMMUNITY • SUSTAINABILITY • PROGRESS</text>
+</svg>

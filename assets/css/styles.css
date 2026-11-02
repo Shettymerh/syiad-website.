@@ -578,15 +578,28 @@ button, input, textarea, select {
   display: block;
 }
 
+.hero-taglines {
+  border-left: 3px solid var(--color-gold);
+  padding-left: 1rem;
+  margin-bottom: 2rem;
+  max-width: 620px;
+}
+
 .hero-tagline {
   font-size: 1.25rem;
   font-weight: 500;
   line-height: 1.5;
   color: #D1FAE5;
-  margin-bottom: 2rem;
-  max-width: 600px;
-  border-left: 3px solid var(--color-gold);
-  padding-left: 1rem;
+  margin-bottom: 0.45rem;
+}
+
+.hero-tagline-fr {
+  font-size: 1.02rem;
+  font-weight: 400;
+  font-style: italic;
+  line-height: 1.45;
+  color: #FDE68A;
+  margin-bottom: 0;
 }
 
 .hero-actions {
@@ -629,17 +642,32 @@ button, input, textarea, select {
 
 .hero-card-frame {
   position: relative;
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.18);
+  background: var(--color-white);
+  border: 2px solid var(--color-gold);
   border-radius: var(--radius-xl);
-  padding: 1.25rem;
-  box-shadow: var(--shadow-xl);
-  backdrop-filter: blur(8px);
+  padding: 1.5rem;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 460px;
+  width: 100%;
+}
+
+.hero-card-frame img.hero-logo-img {
+  width: 100%;
+  max-width: 380px;
+  height: auto;
+  aspect-ratio: 1080 / 1069;
+  object-fit: contain;
+  display: block;
+  border-radius: var(--radius-md);
+  box-shadow: none;
 }
 
 .hero-card-frame img, .hero-card-frame svg {
   border-radius: var(--radius-lg);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
 }
 
 /* Floating Official Emblem Badge on Hero */
@@ -1318,6 +1346,11 @@ button, input, textarea, select {
   font-size: 0.98rem;
   font-weight: 500;
   line-height: 1.4;
+  overflow-wrap: break-word;
+  word-break: normal;
+}
+
+.contact-detail-text a[href^="mailto:"] {
   word-break: break-all;
 }
 
@@ -1595,6 +1628,8 @@ textarea.form-control {
 
 .footer-contact-item a {
   color: #CBD5E1;
+  text-decoration: underline;
+  text-underline-offset: 2px;
 }
 
 .footer-contact-item a:hover {
@@ -1651,13 +1686,23 @@ textarea.form-control {
     font-size: 2.3rem;
   }
 
-  .hero-tagline {
+  .hero-taglines {
     margin-left: auto;
     margin-right: auto;
     border-left: none;
     border-top: 3px solid var(--color-gold);
     padding-left: 0;
     padding-top: 1rem;
+    text-align: center;
+  }
+
+  .hero-tagline {
+    margin-bottom: 0.35rem;
+  }
+
+  .hero-card-frame {
+    max-width: 380px;
+    margin: 0 auto;
   }
 
   .hero-actions {
@@ -1744,6 +1789,16 @@ textarea.form-control {
     font-size: 1.95rem;
   }
 
+  .hero-card-frame {
+    max-width: 340px;
+    padding: 1.25rem;
+  }
+
+  .hero-emblem-badge {
+    left: 0;
+    bottom: -15px;
+  }
+
   .section-title {
     font-size: 1.85rem;
   }
@@ -1778,6 +1833,23 @@ textarea.form-control {
 
   .hero-tagline {
     font-size: 1.05rem;
+  }
+
+  .hero-tagline-fr {
+    font-size: 0.92rem;
+  }
+
+  .hero-card-frame {
+    max-width: 280px;
+    padding: 1rem;
+  }
+
+  .hero-emblem-badge {
+    position: static;
+    margin-top: 1rem;
+    width: 100%;
+    justify-content: center;
+    box-sizing: border-box;
   }
 
   .brand-full-name {
